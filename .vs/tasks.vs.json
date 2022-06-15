@@ -1,0 +1,15 @@
+{
+  "version": "0.2.1",
+  "tasks": [
+    {
+      "taskLabel": "tarefa-Data",
+      "appliesTo": "Data/",
+      "type": "launch"
+    },
+    {
+      "taskLabel": "tarefa-Data",
+      "appliesTo": "Data/",
+      "type": "launch"
+    }
+  ]
+}

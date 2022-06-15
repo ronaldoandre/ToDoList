@@ -1,0 +1,17 @@
+C:\Projetos\ToDoList\Service\bin\Debug\net5.0\Service.deps.json
+C:\Projetos\ToDoList\Service\bin\Debug\net5.0\Service.dll
+C:\Projetos\ToDoList\Service\bin\Debug\net5.0\ref\Service.dll
+C:\Projetos\ToDoList\Service\bin\Debug\net5.0\Service.pdb
+C:\Projetos\ToDoList\Service\obj\Debug\net5.0\Service.csproj.AssemblyReference.cache
+C:\Projetos\ToDoList\Service\obj\Debug\net5.0\Service.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projetos\ToDoList\Service\obj\Debug\net5.0\Service.AssemblyInfoInputs.cache
+C:\Projetos\ToDoList\Service\obj\Debug\net5.0\Service.AssemblyInfo.cs
+C:\Projetos\ToDoList\Service\obj\Debug\net5.0\Service.csproj.CoreCompileInputs.cache
+C:\Projetos\ToDoList\Service\obj\Debug\net5.0\Service.dll
+C:\Projetos\ToDoList\Service\obj\Debug\net5.0\ref\Service.dll
+C:\Projetos\ToDoList\Service\obj\Debug\net5.0\Service.pdb
+C:\Projetos\ToDoList\Service\bin\Debug\net5.0\Data.dll
+C:\Projetos\ToDoList\Service\bin\Debug\net5.0\Domain.dll
+C:\Projetos\ToDoList\Service\bin\Debug\net5.0\Domain.pdb
+C:\Projetos\ToDoList\Service\bin\Debug\net5.0\Data.pdb
+C:\Projetos\ToDoList\Service\obj\Debug\net5.0\Service.csproj.CopyComplete
