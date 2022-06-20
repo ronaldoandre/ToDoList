@@ -52,6 +52,7 @@ namespace Service.Interfaces.Implementations
 
         public async Task<TokenViewModel> Login(UserLoginDto user)
         {
+
             var baseUser = new User();
             User model = _mapper.Map<User>(user);
             model.Password = _userRepository.EncryptPassword(model, new SHA256CryptoServiceProvider());
@@ -68,12 +69,14 @@ namespace Service.Interfaces.Implementations
 
                 baseUser.Password = "****";
 
+                var userview = _mapper.Map<UserViewModel>(baseUser);
+
                 return new TokenViewModel(
                     true,
                     createDate.ToString(DATE_FORMAT),
                     ExpirationDate.ToString(DATE_FORMAT),
                     AccessToken,
-                    _mapper.Map<UserViewModel>(baseUser)
+                    userview
                 ); ;
             }
         } 

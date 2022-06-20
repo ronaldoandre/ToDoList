@@ -158,3 +158,4 @@ C:\Projetos\ToDoList\Data.Test\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerUI
 C:\Projetos\ToDoList\Data.Test\bin\Debug\net5.0\API.dll
 C:\Projetos\ToDoList\Data.Test\bin\Debug\net5.0\API.pdb
 c:\Projetos\ToDoList\Data.Test\obj\Debug\net5.0\refint\Data.Test.dll
+c:\Projetos\ToDoList\Data.Test\bin\Debug\net5.0\API.StaticWebAssets.xml

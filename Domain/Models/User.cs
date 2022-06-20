@@ -8,6 +8,6 @@ namespace TODOLIST.Domain.Models{
         public string Email { get; set; }
         public string Password { get; set; }
         public string FullName { get; set; }
-        public ICollection<ToDo> ToDos { get; set; }
+        public IEnumerable<ToDo> ToDos { get; set; }
     }
 }

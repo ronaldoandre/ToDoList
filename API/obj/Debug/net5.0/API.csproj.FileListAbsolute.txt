@@ -72,5 +72,4 @@ C:\Projetos\ToDoList\API\bin\Debug\net5.0\Microsoft.Extensions.Primitives.dll
 C:\Projetos\ToDoList\API\bin\Debug\net5.0\System.Runtime.CompilerServices.Unsafe.dll
 C:\Projetos\ToDoList\API\bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 C:\Projetos\ToDoList\API\bin\Debug\net5.0\BCrypt.Net-Core.dll
-C:\Projetos\ToDoList\API\bin\Debug\net5.0\ref\API.dll
-C:\Projetos\ToDoList\API\obj\Debug\net5.0\staticwebassets\API.StaticWebAssets.xml
+c:\Projetos\ToDoList\API\obj\Debug\net5.0\refint\API.dll

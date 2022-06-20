@@ -9,4 +9,4 @@ C:\Projetos\ToDoList\Domain\obj\Debug\net5.0\Domain.csproj.CoreCompileInputs.cac
 C:\Projetos\ToDoList\Domain\obj\Debug\net5.0\Domain.dll
 C:\Projetos\ToDoList\Domain\obj\Debug\net5.0\ref\Domain.dll
 C:\Projetos\ToDoList\Domain\obj\Debug\net5.0\Domain.pdb
-C:\Projetos\ToDoList\Domain\bin\Debug\net5.0\ref\Domain.dll
+c:\Projetos\ToDoList\Domain\obj\Debug\net5.0\refint\Domain.dll

@@ -15,4 +15,4 @@ C:\Projetos\ToDoList\Data\obj\Debug\net5.0\Data.dll
 C:\Projetos\ToDoList\Data\obj\Debug\net5.0\ref\Data.dll
 C:\Projetos\ToDoList\Data\obj\Debug\net5.0\Data.pdb
 C:\Projetos\ToDoList\Data\obj\Debug\net5.0\Data.genruntimeconfig.cache
-C:\Projetos\ToDoList\Data\bin\Debug\net5.0\ref\Data.dll
+c:\Projetos\ToDoList\Data\obj\Debug\net5.0\refint\Data.dll

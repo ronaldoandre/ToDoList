@@ -2,6 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
@@ -47,11 +48,15 @@ namespace Data.Repository.Implementations
         }
         public async Task<User> Login(User user)
         {
-
-            return await _context.Users
+            var usuario = await _context.Users
                         .FirstOrDefaultAsync(u => (u.Password.Equals(user.Password)
                                                 && u.Email.Equals(user.Email)));
+            IEnumerable<ToDo> todo = await _context.ToDos.ToArrayAsync<ToDo>();
+            IEnumerable<ToDo> dados = todo.Where(p => p.UserId == usuario.UserId).ToList();
+            usuario.ToDos = dados;
+            return usuario;
         }
+
 
         public async Task<User> GetByEmail(string email)
         {
