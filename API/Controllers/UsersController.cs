@@ -40,7 +40,6 @@ namespace API.Controllers
         }
         
         [HttpGet]
-        [Authorize("Bearer")]
         [Route("{id}", Name = "GetWithId")]
         public async Task<ActionResult<UserViewModel>> GetById([FromRoute] int id)
         {

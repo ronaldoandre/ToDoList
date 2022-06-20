@@ -15,8 +15,13 @@ namespace Data.Mapping
                 .IsUnique();
             builder.Property(u => u.Email)
                 .IsRequired();
+            builder.Property(u => u.Password)
+                .IsRequired();
             builder.Property(u => u.FullName)
                 .IsRequired();
+            builder.HasMany(x => x.ToDos)
+                .WithOne(x => x.User)
+                .HasForeignKey(x => x.UserId);
 
         }
     }

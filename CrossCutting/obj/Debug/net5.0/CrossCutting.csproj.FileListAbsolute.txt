@@ -1,6 +1,5 @@
 C:\Projetos\ToDoList\CrossCutting\bin\Debug\net5.0\CrossCutting.deps.json
 C:\Projetos\ToDoList\CrossCutting\bin\Debug\net5.0\CrossCutting.dll
-C:\Projetos\ToDoList\CrossCutting\bin\Debug\net5.0\ref\CrossCutting.dll
 C:\Projetos\ToDoList\CrossCutting\bin\Debug\net5.0\CrossCutting.pdb
 C:\Projetos\ToDoList\CrossCutting\bin\Debug\net5.0\Data.dll
 C:\Projetos\ToDoList\CrossCutting\bin\Debug\net5.0\Domain.dll
@@ -17,3 +16,4 @@ C:\Projetos\ToDoList\CrossCutting\obj\Debug\net5.0\CrossCutting.csproj.CopyCompl
 C:\Projetos\ToDoList\CrossCutting\obj\Debug\net5.0\CrossCutting.dll
 C:\Projetos\ToDoList\CrossCutting\obj\Debug\net5.0\ref\CrossCutting.dll
 C:\Projetos\ToDoList\CrossCutting\obj\Debug\net5.0\CrossCutting.pdb
+C:\Projetos\ToDoList\CrossCutting\bin\Debug\net5.0\ref\CrossCutting.dll

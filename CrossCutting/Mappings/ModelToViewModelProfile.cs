@@ -15,9 +15,11 @@ namespace CrossCutting.Mappings
             CreateMap<User, UserLoginDto>()
                 .ReverseMap();
             CreateMap<User, UserRegisterDto>()
-                 .ReverseMap();
+                .ReverseMap();
             CreateMap<UserViewModel, UserRegisterDto>()
-                  .ReverseMap();
+                .ReverseMap();
+            CreateMap<ToDo, ToDoViewModel>()
+                .ReverseMap();
         }
     }
 }

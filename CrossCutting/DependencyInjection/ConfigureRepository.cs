@@ -11,6 +11,7 @@ namespace CrossCutting.DependencyInjection
         public static void ConfigureDependenciesRepository (IServiceCollection serviceCollection)
         {
             serviceCollection.AddScoped<IUserRepository,UserRepository>();
+            serviceCollection.AddScoped<IToDoRepository,ToDoRepository>();
 
             serviceCollection.AddDbContext<MyContext>(
              options => options.UseSqlServer("Server=localhost;Database=todolistDB;Trusted_Connection=True;")

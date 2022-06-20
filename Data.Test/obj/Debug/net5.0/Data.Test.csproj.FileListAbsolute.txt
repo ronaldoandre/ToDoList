@@ -9,7 +9,6 @@ C:\Projetos\ToDoList\Data.Test\bin\Debug\net5.0\Data.Test.deps.json
 C:\Projetos\ToDoList\Data.Test\bin\Debug\net5.0\Data.Test.runtimeconfig.json
 C:\Projetos\ToDoList\Data.Test\bin\Debug\net5.0\Data.Test.runtimeconfig.dev.json
 C:\Projetos\ToDoList\Data.Test\bin\Debug\net5.0\Data.Test.dll
-C:\Projetos\ToDoList\Data.Test\bin\Debug\net5.0\ref\Data.Test.dll
 C:\Projetos\ToDoList\Data.Test\bin\Debug\net5.0\Data.Test.pdb
 C:\Projetos\ToDoList\Data.Test\bin\Debug\net5.0\AutoMapper.dll
 C:\Projetos\ToDoList\Data.Test\bin\Debug\net5.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
@@ -158,3 +157,4 @@ C:\Projetos\ToDoList\Data.Test\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerGe
 C:\Projetos\ToDoList\Data.Test\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
 C:\Projetos\ToDoList\Data.Test\bin\Debug\net5.0\API.dll
 C:\Projetos\ToDoList\Data.Test\bin\Debug\net5.0\API.pdb
+c:\Projetos\ToDoList\Data.Test\obj\Debug\net5.0\refint\Data.Test.dll

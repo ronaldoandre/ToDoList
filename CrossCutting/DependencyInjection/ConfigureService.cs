@@ -10,6 +10,7 @@ namespace CrossCutting.DependencyInjection
         {
             serviceCollection.AddScoped<IUserService, UserService>();
             serviceCollection.AddScoped<ITokenService, TokenService>();
+            serviceCollection.AddScoped<IToDoService, ToDoService>();
         }
     }
 }

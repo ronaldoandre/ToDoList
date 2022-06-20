@@ -7,6 +7,7 @@ namespace TODOLIST.Data.Context
     public class MyContext : DbContext
     {
         public DbSet<User> Users { get; set; }
+        public DbSet<ToDo> ToDos { get; set; }
 
         public MyContext(DbContextOptions<MyContext> options) : base(options) { }
 
@@ -14,6 +15,7 @@ namespace TODOLIST.Data.Context
         {
             base.OnModelCreating(modelBuilder);
             modelBuilder.Entity<User>(new UserMap().Configure);
+            modelBuilder.Entity<ToDo>(new ToDoMap().Configure);
         }
     }
 }

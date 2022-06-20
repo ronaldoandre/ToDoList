@@ -18,6 +18,33 @@ namespace Data.Migrations
                 .HasAnnotation("ProductVersion", "5.0.16")
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
+            modelBuilder.Entity("TODOLIST.Domain.Models.ToDo", b =>
+                {
+                    b.Property<int>("ToDoId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("Descricao")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Titulo")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<int>("UserId")
+                        .HasColumnType("int");
+
+                    b.HasKey("ToDoId");
+
+                    b.HasIndex("Titulo");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("ToDos");
+                });
+
             modelBuilder.Entity("TODOLIST.Domain.Models.User", b =>
                 {
                     b.Property<int>("UserId")
@@ -34,6 +61,7 @@ namespace Data.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Password")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("UserId");
@@ -42,6 +70,22 @@ namespace Data.Migrations
                         .IsUnique();
 
                     b.ToTable("User");
+                });
+
+            modelBuilder.Entity("TODOLIST.Domain.Models.ToDo", b =>
+                {
+                    b.HasOne("TODOLIST.Domain.Models.User", "User")
+                        .WithMany("ToDos")
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("User");
+                });
+
+            modelBuilder.Entity("TODOLIST.Domain.Models.User", b =>
+                {
+                    b.Navigation("ToDos");
                 });
 #pragma warning restore 612, 618
         }
