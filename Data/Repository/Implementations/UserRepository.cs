@@ -51,9 +51,6 @@ namespace Data.Repository.Implementations
             var usuario = await _context.Users
                         .FirstOrDefaultAsync(u => (u.Password.Equals(user.Password)
                                                 && u.Email.Equals(user.Email)));
-            IEnumerable<ToDo> todo = await _context.ToDos.ToArrayAsync<ToDo>();
-            IEnumerable<ToDo> dados = todo.Where(p => p.UserId == usuario.UserId).ToList();
-            usuario.ToDos = dados;
             return usuario;
         }
 

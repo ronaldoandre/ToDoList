@@ -13,7 +13,6 @@ using Microsoft.AspNetCore.Authorization;
 using Service.Configurations;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
-using Microsoft.AspNetCore.Authentication;
 
 namespace API
 {

@@ -1,6 +1,8 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
 using Service.Interfaces.Interfaces;
 using Service.Interfaces.Implementations;
+using Service.Configurations;
+using System.Collections.Generic;
 
 namespace CrossCutting.DependencyInjection
 {
@@ -11,6 +13,16 @@ namespace CrossCutting.DependencyInjection
             serviceCollection.AddScoped<IUserService, UserService>();
             serviceCollection.AddScoped<ITokenService, TokenService>();
             serviceCollection.AddScoped<IToDoService, ToDoService>();
+        
+
+            var status = new List<StatusConfigurations>
+            {
+                new StatusConfigurations(0, "Agendado"),
+                new StatusConfigurations(1, "Iniciado"),
+                new StatusConfigurations(2, "Concluido")
+            };
+
+            serviceCollection.AddSingleton(status);
         }
     }
 }

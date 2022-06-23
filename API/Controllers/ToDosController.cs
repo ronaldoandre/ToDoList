@@ -13,7 +13,8 @@ namespace API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class ToDosController : ControllerBase
+    [Authorize("Bearer")]
+    public class ToDosController : BaseController
     {
         private IToDoService _service;
         public ToDosController(IToDoService service)
@@ -37,16 +38,12 @@ namespace API.Controllers
                 return StatusCode((int)HttpStatusCode.InternalServerError, e.Message);
             }
         }
-        [HttpGet("User/{UserId}")]
-        public async Task<ActionResult<IEnumerable<ToDoViewModel>>> GetByUserId([FromRoute] int UserId)
+        [HttpGet("User/")]
+        public async Task<ActionResult<IEnumerable<ToDoViewModel>>> GetByUser()
         {
-            if (UserId < 1)
-            {
-                return BadRequest("Modelo passado não é válido!");
-            }
             try
             {
-                return Ok(await _service.GetByUserId(UserId));
+                return Ok(await _service.GetByUser(Email));
             }
             catch (ArgumentException e)
             {
@@ -80,7 +77,7 @@ namespace API.Controllers
             }
             try
             {
-                var result = await _service.Update(todo);
+                var result = await _service.Update(todo,Email);
                 if (result != null)
                 {
                     return Ok(result);
@@ -119,7 +116,7 @@ namespace API.Controllers
             }
             try
             {
-                var result = await _service.Create(todo);
+                var result = await _service.Create(todo,Email);
                 if (result != null)
                 {
                     return Ok(result);

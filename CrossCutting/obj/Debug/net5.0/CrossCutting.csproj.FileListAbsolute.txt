@@ -16,4 +16,4 @@ C:\Projetos\ToDoList\CrossCutting\obj\Debug\net5.0\CrossCutting.csproj.CopyCompl
 C:\Projetos\ToDoList\CrossCutting\obj\Debug\net5.0\CrossCutting.dll
 C:\Projetos\ToDoList\CrossCutting\obj\Debug\net5.0\ref\CrossCutting.dll
 C:\Projetos\ToDoList\CrossCutting\obj\Debug\net5.0\CrossCutting.pdb
-c:\Projetos\ToDoList\CrossCutting\obj\Debug\net5.0\refint\CrossCutting.dll
+C:\Projetos\ToDoList\CrossCutting\bin\Debug\net5.0\ref\CrossCutting.dll

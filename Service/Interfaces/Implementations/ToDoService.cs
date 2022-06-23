@@ -7,6 +7,7 @@ using System;
 using Service.Configurations;
 using System.Threading.Tasks;
 using System.Collections.Generic;
+using TODOLIST.Domain.Enum;
 
 namespace Service.Interfaces.Implementations
 {
@@ -37,22 +38,42 @@ namespace Service.Interfaces.Implementations
             _token = token;
             _configuration = config;
         }
-
-        public async Task<ToDoViewModel> Create(ToDoViewModel todo)
+        private void ValidarStatus(int status)
         {
-            ToDo model = _mapper.Map<ToDo>(todo);
-            ToDo result = await _todoRepository.Create(model);
-            ToDoViewModel userReturn = _mapper.Map<ToDoViewModel>(result);
-            return userReturn;
-
+            if( !Enum.IsDefined(typeof(StatusTodoEnum), status) )
+                throw new Exception("Status não existe!");
         }
 
-        public async Task<ToDoViewModel> Update(ToDoViewModel todo)
+        public async Task<ToDoViewModel> Create(ToDoViewModel todo,string email)
         {
-            var edit = await GetById(todo.ToDoId);
-            edit.Titulo = todo.Titulo;
-            edit.Descricao = todo.Descricao;
-            ToDo model = _mapper.Map<ToDo>(edit);
+            ToDo model = _mapper.Map<ToDo>(todo);
+
+            if (!model.isValid)
+                throw new Exception("Informações não são válidas!");
+            
+            ValidarStatus((int)model.Status);
+
+            var user = await _userService.GetByEmail(email);
+            model.UserId = user.UserId;
+            model.DataCriada = DateTime.Now;
+            
+            ToDo result = await _todoRepository.Create(model);
+            ToDoViewModel todoReturn = _mapper.Map<ToDoViewModel>(result);
+            return todoReturn;
+        }
+
+        public async Task<ToDoViewModel> Update(ToDoViewModel todo,string email)
+        {
+            ToDo model = _mapper.Map<ToDo>(todo);
+
+            if (!model.isValid)
+                throw new Exception("Informações não são válidas!");
+
+            ValidarStatus((int)model.Status);
+
+            var user = await _userService.GetByEmail(email);
+            model.UserId = user.UserId;
+
             ToDo result = await _todoRepository.Update(model);
             return _mapper.Map<ToDoViewModel>(result);
         }
@@ -65,16 +86,19 @@ namespace Service.Interfaces.Implementations
             await _todoRepository.Delete(id);
         }
 
-        public async Task<ToDoViewModel> GetById(int id)
+        public async Task<ToDoViewModel> GetById(int todoId)
         {
-            ToDo todo = await _todoRepository.GetById(id);
+            ToDo todo = await _todoRepository.GetById(todoId);
             return _mapper.Map<ToDoViewModel>(todo);
         }
 
-        public async Task<IEnumerable<ToDoViewModel>> GetByUserId(int UserId)
+        public async Task<IEnumerable<ToDoViewModel>> GetByUser(string email)
         {
-            UserViewModel user = await _userService.GetById(UserId);
-            IEnumerable<ToDo> todo = await _todoRepository.GetByUserId(user.UserId);
+            
+            var user = await _userService.GetByEmail(email);
+            var id = user.UserId;
+
+            IEnumerable<ToDo> todo = await _todoRepository.GetByUserId(id);
             return _mapper.Map<IEnumerable<ToDoViewModel>>(todo);
         }
 

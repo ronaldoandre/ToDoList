@@ -24,8 +24,8 @@ namespace Service.Interfaces.Implementations
             var tokenDescriptor = new SecurityTokenDescriptor
             {
                 Subject = new ClaimsIdentity(new Claim[]{
-                    new Claim(ClaimTypes.Name, user.FullName.ToString()),
-                    new Claim(ClaimTypes.Email, user.Email.ToString()),
+                    new Claim("Email", user.Email.ToString()),
+                    new Claim("Name", user.FullName.ToString())
                 }),
                 Expires = DateTime.UtcNow.AddHours(_configuration.TimeToExpiry),
                 SigningCredentials = new SigningCredentials(

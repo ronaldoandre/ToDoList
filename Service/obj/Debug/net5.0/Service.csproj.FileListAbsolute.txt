@@ -14,4 +14,4 @@ C:\Projetos\ToDoList\Service\bin\Debug\net5.0\Domain.dll
 C:\Projetos\ToDoList\Service\bin\Debug\net5.0\Domain.pdb
 C:\Projetos\ToDoList\Service\bin\Debug\net5.0\Data.pdb
 C:\Projetos\ToDoList\Service\obj\Debug\net5.0\Service.csproj.CopyComplete
-c:\Projetos\ToDoList\Service\obj\Debug\net5.0\refint\Service.dll
+C:\Projetos\ToDoList\Service\bin\Debug\net5.0\ref\Service.dll

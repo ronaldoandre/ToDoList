@@ -39,7 +39,7 @@ namespace Data.Repository.Implementations
         {
             return await _context.ToDos
                 .AsNoTracking()
-                .Include(x => x.User)
+                .Include(x => x.ToDoId)
                 .FirstOrDefaultAsync(x => x.ToDoId.Equals(id));
         }
 
@@ -47,7 +47,6 @@ namespace Data.Repository.Implementations
         {
             return await _context.ToDos
                 .AsNoTracking()
-                .Include(x => x.User)
                 .Where(x => x.UserId.Equals(UserId))
                 .ToListAsync();
         }
