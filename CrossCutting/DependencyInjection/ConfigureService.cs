@@ -22,7 +22,14 @@ namespace CrossCutting.DependencyInjection
                 new StatusConfigurations(2, "Concluido")
             };
 
+            var roles = new List<RoleConfigurations>
+            {
+                new RoleConfigurations(0, "Usuario"),
+                new RoleConfigurations(1, "Admin")
+            };
+
             serviceCollection.AddSingleton(status);
+            serviceCollection.AddSingleton(roles);
         }
     }
 }

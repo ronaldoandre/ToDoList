@@ -63,9 +63,7 @@ namespace Data.Repository.Implementations
 
         public string EncryptPassword(User user, SHA256CryptoServiceProvider algorithm)
         {
-            var valueBytes = System.Convert.FromBase64String(user.Password);
-            var pass = Encoding.UTF8.GetString(valueBytes);
-            Byte[] inputBytes = Encoding.UTF8.GetBytes(pass);
+            Byte[] inputBytes = Encoding.UTF8.GetBytes(user.Password);
             Byte[] hashedBytes = algorithm.ComputeHash(inputBytes);
             user.Password = BitConverter.ToString(hashedBytes);
             return user.Password;

@@ -37,8 +37,16 @@ namespace Service.Interfaces.Implementations
             _token = token;
             _configuration = config;
         }
-        public async Task<IEnumerable<UserViewModel>> Get()
+        public async Task ValidaUsuarioAdministrador(string email)
         {
+            var user = await this.GetByEmail(email) ?? throw new Exception("Nenhum usuário encontrado!");
+            if (user.Role != TODOLIST.Domain.Enum.RolePerfilEnum.ADMIN)
+                throw new Exception("Você não tem o perfil de ADMINISTRADOR!");
+        }
+
+        public async Task<IEnumerable<UserViewModel>> Get(string email)
+        {
+            await ValidaUsuarioAdministrador(email);
             IEnumerable<User>  listUser = await _userRepository.Get();
             IEnumerable<UserViewModel> result = _mapper.Map<IEnumerable<UserViewModel>>(listUser);
             return result;
@@ -47,6 +55,8 @@ namespace Service.Interfaces.Implementations
         public async Task<UserViewModel> GetById(int id)
         {
             User user = await _userRepository.GetById(id);
+
+            user.Password = "****";
             return _mapper.Map<UserViewModel>(user);
         }
 
@@ -84,13 +94,20 @@ namespace Service.Interfaces.Implementations
         public async Task<UserRegisterDto> Register(UserRegisterDto user)
         {
             User model = _mapper.Map<User>(user);
+
+            var modelUserName = await this.GetByEmail(user.Email);
+            if (modelUserName != null)
+                throw new Exception("Usuário já existente!");
+
+            model.Role = 0;// 0: Usuario Comum
             model.Password = _userRepository.EncryptPassword(model, new SHA256CryptoServiceProvider());
             User result = await _userRepository.Register(model);
             UserRegisterDto userReturn = _mapper.Map<UserRegisterDto>(result);
+            userReturn.Password ="****";
             return userReturn;
         }
 
-        public async Task<UserViewModel> Update(UserViewModel user)
+        public async Task<UserRegisterDto> Update(UserRegisterDto user,string email)
         {
             User model = _mapper.Map<User>(user);
             if(model.Password == null)
@@ -101,13 +118,17 @@ namespace Service.Interfaces.Implementations
             {
                 model.Password = _userRepository.EncryptPassword(model, new SHA256CryptoServiceProvider());
             }
+            var userdb = await _userRepository.GetByEmail(email);
+            model.Role = userdb.Role;// obriga a role não ser alterada
+
             User result = await _userRepository.Update(model);
-            return _mapper.Map<UserViewModel>(result);
+            return _mapper.Map<UserRegisterDto>(result);
         }
 
         public async Task<UserViewModel> GetByEmail(string email)
         {
             User user = await _userRepository.GetByEmail(email);
+
             return _mapper.Map<UserViewModel>(user);
         }
     }

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Projetos\\ToDoList\\Service\\Service.csproj": {}
+    "c:\\Projetos\\ToDoList\\Service\\Service.csproj": {}
   },
   "projects": {
-    "C:\\Projetos\\ToDoList\\Data\\Data.csproj": {
+    "c:\\Projetos\\ToDoList\\Data\\Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Projetos\\ToDoList\\Data\\Data.csproj",
+        "projectUniqueName": "c:\\Projetos\\ToDoList\\Data\\Data.csproj",
         "projectName": "Data",
-        "projectPath": "C:\\Projetos\\ToDoList\\Data\\Data.csproj",
+        "projectPath": "c:\\Projetos\\ToDoList\\Data\\Data.csproj",
         "packagesPath": "C:\\Users\\Ronaldo\\.nuget\\packages\\",
-        "outputPath": "C:\\Projetos\\ToDoList\\Data\\obj\\",
+        "outputPath": "c:\\Projetos\\ToDoList\\Data\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -34,8 +34,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Projetos\\ToDoList\\Domain\\Domain.csproj": {
-                "projectPath": "C:\\Projetos\\ToDoList\\Domain\\Domain.csproj"
+              "c:\\Projetos\\ToDoList\\Domain\\Domain.csproj": {
+                "projectPath": "c:\\Projetos\\ToDoList\\Domain\\Domain.csproj"
               }
             }
           }
@@ -90,18 +90,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.405\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Projetos\\ToDoList\\Domain\\Domain.csproj": {
+    "c:\\Projetos\\ToDoList\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Projetos\\ToDoList\\Domain\\Domain.csproj",
+        "projectUniqueName": "c:\\Projetos\\ToDoList\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "C:\\Projetos\\ToDoList\\Domain\\Domain.csproj",
+        "projectPath": "c:\\Projetos\\ToDoList\\Domain\\Domain.csproj",
         "packagesPath": "C:\\Users\\Ronaldo\\.nuget\\packages\\",
-        "outputPath": "C:\\Projetos\\ToDoList\\Domain\\obj\\",
+        "outputPath": "c:\\Projetos\\ToDoList\\Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -156,18 +156,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.405\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Projetos\\ToDoList\\Service\\Service.csproj": {
+    "c:\\Projetos\\ToDoList\\Service\\Service.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Projetos\\ToDoList\\Service\\Service.csproj",
+        "projectUniqueName": "c:\\Projetos\\ToDoList\\Service\\Service.csproj",
         "projectName": "Service",
-        "projectPath": "C:\\Projetos\\ToDoList\\Service\\Service.csproj",
+        "projectPath": "c:\\Projetos\\ToDoList\\Service\\Service.csproj",
         "packagesPath": "C:\\Users\\Ronaldo\\.nuget\\packages\\",
-        "outputPath": "C:\\Projetos\\ToDoList\\Service\\obj\\",
+        "outputPath": "c:\\Projetos\\ToDoList\\Service\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -190,11 +190,11 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Projetos\\ToDoList\\Data\\Data.csproj": {
-                "projectPath": "C:\\Projetos\\ToDoList\\Data\\Data.csproj"
+              "c:\\Projetos\\ToDoList\\Data\\Data.csproj": {
+                "projectPath": "c:\\Projetos\\ToDoList\\Data\\Data.csproj"
               },
-              "C:\\Projetos\\ToDoList\\Domain\\Domain.csproj": {
-                "projectPath": "C:\\Projetos\\ToDoList\\Domain\\Domain.csproj"
+              "c:\\Projetos\\ToDoList\\Domain\\Domain.csproj": {
+                "projectPath": "c:\\Projetos\\ToDoList\\Domain\\Domain.csproj"
               }
             }
           }
@@ -233,7 +233,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.405\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
         }
       }
     }

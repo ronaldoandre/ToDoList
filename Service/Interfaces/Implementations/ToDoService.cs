@@ -102,8 +102,11 @@ namespace Service.Interfaces.Implementations
             return _mapper.Map<IEnumerable<ToDoViewModel>>(todo);
         }
 
-        public async Task<IEnumerable<ToDoViewModel>> Get()
+        public async Task<IEnumerable<ToDoViewModel>> Get(string email)
         {
+
+            await _userService.ValidaUsuarioAdministrador(email);
+
             IEnumerable<ToDo>  listToDo = await _todoRepository.Get();
             IEnumerable<ToDoViewModel> result = _mapper.Map<IEnumerable<ToDoViewModel>>(listToDo);
             return result;

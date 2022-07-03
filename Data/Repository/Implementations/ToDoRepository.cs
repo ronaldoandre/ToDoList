@@ -39,7 +39,6 @@ namespace Data.Repository.Implementations
         {
             return await _context.ToDos
                 .AsNoTracking()
-                .Include(x => x.ToDoId)
                 .FirstOrDefaultAsync(x => x.ToDoId.Equals(id));
         }
 

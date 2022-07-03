@@ -1,5 +1,4 @@
 ﻿using Domain.Dtos.Users;
-using Domain.ViewModels;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Service.Interfaces.Interfaces;
@@ -12,7 +11,7 @@ namespace API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class UsersController : ControllerBase
+    public class UsersController : BaseController
     {
         private IUserService _service;
         public UsersController(IUserService service)
@@ -21,6 +20,7 @@ namespace API.Controllers
         }
         
         [HttpGet]
+        [Authorize("Bearer")]
         public async Task<ActionResult> Get()
         {
             if (!ModelState.IsValid)
@@ -29,7 +29,7 @@ namespace API.Controllers
             }
             try
             {
-                return Ok(await _service.Get());
+                return Ok(await _service.Get(Email));
 
             }
             catch (ArgumentException e)
@@ -41,6 +41,7 @@ namespace API.Controllers
         
         [HttpGet]
         [Route("{id}", Name = "GetWithId")]
+        [Authorize("Bearer")]
         public async Task<ActionResult<UserViewModel>> GetById([FromRoute] int id)
         {
             if (!ModelState.IsValid)
@@ -89,7 +90,7 @@ namespace API.Controllers
         
         [HttpPut]
         [Authorize("Bearer")]
-        public async Task<ActionResult<UserViewModel>> Update([FromBody] UserViewModel user)
+        public async Task<ActionResult<UserRegisterDto>> Update([FromBody] UserRegisterDto user)
         {
             if (!ModelState.IsValid)
             {
@@ -97,7 +98,7 @@ namespace API.Controllers
             }
             try
             {
-                var result = await _service.Update(user);
+                var result = await _service.Update(user,Email);
                 if (result != null)
                 {
                     return Ok(result);
@@ -114,7 +115,7 @@ namespace API.Controllers
             }
         }
         
-        [HttpPost("login")]
+        [HttpPost("Login")]
         [AllowAnonymous]
         public async Task<ActionResult<object>> Login([FromBody] UserLoginDto user)
         {

@@ -13,6 +13,6 @@ namespace Service.Interfaces.Interfaces
         Task Delete(int id);
         Task<ToDoViewModel> GetById(int id);
         Task<IEnumerable<ToDoViewModel>> GetByUser(string email);
-        Task<IEnumerable<ToDoViewModel>> Get();
+        Task<IEnumerable<ToDoViewModel>> Get(string email);
     }
 }

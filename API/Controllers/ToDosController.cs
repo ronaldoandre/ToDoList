@@ -31,7 +31,7 @@ namespace API.Controllers
             }
             try
             {
-                return Ok(await _service.Get());
+                return Ok(await _service.Get(Email));
             }
             catch (ArgumentException e)
             {

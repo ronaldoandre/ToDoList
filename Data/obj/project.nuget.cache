@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "QzBv5qI4D3kNXPx7uGg4FfYiQIsOpC3iTvxN9i4LJLV8HD4+l5gymwkq19JPokpeLxKVaIlG4GIsPoqEHJAo/w==",
+  "dgSpecHash": "Ig2agLU9M/IL9lfjueU/9w8o/HDIP610Eb5cv9HRe+TvgqhwmY/R8CJeRUsNOVmgMsoXg70C0yvyYTeOgx42QQ==",
   "success": true,
-  "projectFilePath": "C:\\Projetos\\ToDoList\\Data\\Data.csproj",
+  "projectFilePath": "c:\\Projetos\\ToDoList\\Data\\Data.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Ronaldo\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Ronaldo\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
