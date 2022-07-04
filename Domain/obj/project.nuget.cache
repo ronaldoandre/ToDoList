@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "by6a8lXrZkQkxOOejFYC/1eWKcifj+cxFMdAt4fN9JXFAEypcyFM2EMWxKxg34crZv4rtAmwnCfCoWcEOXph8w==",
+  "dgSpecHash": "ma3dzsXP2hEETbhxB9h9sBqrwLgoK8W1A9TynAoBuLaZQU4J5pfDL6m2/JO0ZaSBGl7wEwhIbd38FOpnPjtcOg==",
   "success": true,
-  "projectFilePath": "c:\\Projetos\\ToDoList\\Domain\\Domain.csproj",
+  "projectFilePath": "C:\\Projetos\\ToDoList\\Domain\\Domain.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Ronaldo\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\Ronaldo\\.nuget\\packages\\microsoft.identitymodel.jsonwebtokens\\6.17.0\\microsoft.identitymodel.jsonwebtokens.6.17.0.nupkg.sha512",

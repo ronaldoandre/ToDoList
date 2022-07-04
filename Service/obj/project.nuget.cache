@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "kFB/psPStCVRs09TFOc0L5ZvWjse6FjsJIrgrYbfhWzDWgzk4p8zr2oYen0qsY4Jqzbbbbpz4tLy/kUGH5uSRA==",
+  "dgSpecHash": "POr0mwWAArsRy2ipJ2wUL7qRuxroAL0v4VwQNqL5Gh+frIZdimi/WjGwDPxo3W8JGx20XHeju8qOl9UxPmy5Yg==",
   "success": true,
-  "projectFilePath": "c:\\Projetos\\ToDoList\\Service\\Service.csproj",
+  "projectFilePath": "C:\\Projetos\\ToDoList\\Service\\Service.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Ronaldo\\.nuget\\packages\\automapper\\11.0.1\\automapper.11.0.1.nupkg.sha512",
     "C:\\Users\\Ronaldo\\.nuget\\packages\\bcrypt.net-core\\1.6.0\\bcrypt.net-core.1.6.0.nupkg.sha512",

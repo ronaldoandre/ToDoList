@@ -5883,11 +5883,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Projetos\\ToDoList\\Data\\Data.csproj",
+      "projectUniqueName": "C:\\Projetos\\ToDoList\\Data\\Data.csproj",
       "projectName": "Data",
-      "projectPath": "c:\\Projetos\\ToDoList\\Data\\Data.csproj",
+      "projectPath": "C:\\Projetos\\ToDoList\\Data\\Data.csproj",
       "packagesPath": "C:\\Users\\Ronaldo\\.nuget\\packages\\",
-      "outputPath": "c:\\Projetos\\ToDoList\\Data\\obj\\",
+      "outputPath": "C:\\Projetos\\ToDoList\\Data\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -5910,8 +5910,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "c:\\Projetos\\ToDoList\\Domain\\Domain.csproj": {
-              "projectPath": "c:\\Projetos\\ToDoList\\Domain\\Domain.csproj"
+            "C:\\Projetos\\ToDoList\\Domain\\Domain.csproj": {
+              "projectPath": "C:\\Projetos\\ToDoList\\Domain\\Domain.csproj"
             }
           }
         }

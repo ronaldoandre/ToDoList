@@ -8,6 +8,7 @@ using Service.Configurations;
 using System.Threading.Tasks;
 using System.Collections.Generic;
 using TODOLIST.Domain.Enum;
+using Domain.Dtos.ToDo;
 
 namespace Service.Interfaces.Implementations
 {
@@ -44,21 +45,31 @@ namespace Service.Interfaces.Implementations
                 throw new Exception("Status não existe!");
         }
 
-        public async Task<ToDoViewModel> Create(ToDoViewModel todo,string email)
+        public async Task<ToDoCreateDto> Create(ToDoCreateDto todo,string email)
         {
             ToDo model = _mapper.Map<ToDo>(todo);
+
+            String[] hora = todo.Hora.Split(':');
+            String[] data = todo.Data.Split('-');
+            var Day = Convert.ToInt32(data[2]);
+            var Month = Convert.ToInt32(data[1]);
+            var Year = Convert.ToInt32(data[0]);
+            var Hour = Convert.ToInt32(hora[0]);
+            var Minute = Convert.ToInt32(hora[1]);
+            model.DataTarefa = new DateTime(Year,Month,Day,Hour,Minute,00);
+            var user = await _userService.GetByEmail(email);
+            model.UserId = user.UserId;
 
             if (!model.isValid)
                 throw new Exception("Informações não são válidas!");
             
             ValidarStatus((int)model.Status);
 
-            var user = await _userService.GetByEmail(email);
-            model.UserId = user.UserId;
+            
             model.DataCriada = DateTime.Now;
             
             ToDo result = await _todoRepository.Create(model);
-            ToDoViewModel todoReturn = _mapper.Map<ToDoViewModel>(result);
+            ToDoCreateDto todoReturn = _mapper.Map<ToDoCreateDto>(result);
             return todoReturn;
         }
 
@@ -78,12 +89,18 @@ namespace Service.Interfaces.Implementations
             return _mapper.Map<ToDoViewModel>(result);
         }
 
-        public async Task Delete(int id)
+        public async Task Delete(int id,string email)
         {
             if (id < 0)
                 throw new Exception("Identificador inválido!");
 
-            await _todoRepository.Delete(id);
+            var user = await _userService.GetByEmail(email);
+            var todo = await _todoRepository.GetById(id);
+            if(todo.UserId == user.UserId){
+                await _todoRepository.Delete(id);
+            }else{
+                throw new Exception("Usuario inválido para essa tarefa!");
+            }
         }
 
         public async Task<ToDoViewModel> GetById(int todoId)

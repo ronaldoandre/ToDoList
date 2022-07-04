@@ -1,4 +1,5 @@
-﻿using Domain.Dtos.Users;
+﻿using Domain.Dtos.ToDo;
+using Domain.Dtos.Users;
 using Domain.ViewModels;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
@@ -98,7 +99,7 @@ namespace API.Controllers
         {
             try
             {
-                await _service.Delete(TodoId);
+                await _service.Delete(TodoId,Email);
                 return Ok("Registros deletado com sucesso!");
             }
             catch (ArgumentException e)
@@ -108,7 +109,7 @@ namespace API.Controllers
         }
 
         [HttpPost("create")]
-        public async Task<ActionResult> Create([FromBody] ToDoViewModel todo)
+        public async Task<ActionResult> Create([FromBody] ToDoCreateDto todo)
         {
             if (!ModelState.IsValid)
             {

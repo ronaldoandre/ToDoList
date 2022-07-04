@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Projetos\\ToDoList\\CrossCutting\\CrossCutting.csproj": {}
+    "C:\\Projetos\\ToDoList\\CrossCutting\\CrossCutting.csproj": {}
   },
   "projects": {
-    "c:\\Projetos\\ToDoList\\CrossCutting\\CrossCutting.csproj": {
+    "C:\\Projetos\\ToDoList\\CrossCutting\\CrossCutting.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Projetos\\ToDoList\\CrossCutting\\CrossCutting.csproj",
+        "projectUniqueName": "C:\\Projetos\\ToDoList\\CrossCutting\\CrossCutting.csproj",
         "projectName": "CrossCutting",
-        "projectPath": "c:\\Projetos\\ToDoList\\CrossCutting\\CrossCutting.csproj",
+        "projectPath": "C:\\Projetos\\ToDoList\\CrossCutting\\CrossCutting.csproj",
         "packagesPath": "C:\\Users\\Ronaldo\\.nuget\\packages\\",
-        "outputPath": "c:\\Projetos\\ToDoList\\CrossCutting\\obj\\",
+        "outputPath": "C:\\Projetos\\ToDoList\\CrossCutting\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -34,14 +34,14 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "c:\\Projetos\\ToDoList\\Data\\Data.csproj": {
-                "projectPath": "c:\\Projetos\\ToDoList\\Data\\Data.csproj"
+              "C:\\Projetos\\ToDoList\\Data\\Data.csproj": {
+                "projectPath": "C:\\Projetos\\ToDoList\\Data\\Data.csproj"
               },
-              "c:\\Projetos\\ToDoList\\Domain\\Domain.csproj": {
-                "projectPath": "c:\\Projetos\\ToDoList\\Domain\\Domain.csproj"
+              "C:\\Projetos\\ToDoList\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Projetos\\ToDoList\\Domain\\Domain.csproj"
               },
-              "c:\\Projetos\\ToDoList\\Service\\Service.csproj": {
-                "projectPath": "c:\\Projetos\\ToDoList\\Service\\Service.csproj"
+              "C:\\Projetos\\ToDoList\\Service\\Service.csproj": {
+                "projectPath": "C:\\Projetos\\ToDoList\\Service\\Service.csproj"
               }
             }
           }
@@ -84,14 +84,14 @@
         }
       }
     },
-    "c:\\Projetos\\ToDoList\\Data\\Data.csproj": {
+    "C:\\Projetos\\ToDoList\\Data\\Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Projetos\\ToDoList\\Data\\Data.csproj",
+        "projectUniqueName": "C:\\Projetos\\ToDoList\\Data\\Data.csproj",
         "projectName": "Data",
-        "projectPath": "c:\\Projetos\\ToDoList\\Data\\Data.csproj",
+        "projectPath": "C:\\Projetos\\ToDoList\\Data\\Data.csproj",
         "packagesPath": "C:\\Users\\Ronaldo\\.nuget\\packages\\",
-        "outputPath": "c:\\Projetos\\ToDoList\\Data\\obj\\",
+        "outputPath": "C:\\Projetos\\ToDoList\\Data\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -114,8 +114,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "c:\\Projetos\\ToDoList\\Domain\\Domain.csproj": {
-                "projectPath": "c:\\Projetos\\ToDoList\\Domain\\Domain.csproj"
+              "C:\\Projetos\\ToDoList\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Projetos\\ToDoList\\Domain\\Domain.csproj"
               }
             }
           }
@@ -174,14 +174,14 @@
         }
       }
     },
-    "c:\\Projetos\\ToDoList\\Domain\\Domain.csproj": {
+    "C:\\Projetos\\ToDoList\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Projetos\\ToDoList\\Domain\\Domain.csproj",
+        "projectUniqueName": "C:\\Projetos\\ToDoList\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "c:\\Projetos\\ToDoList\\Domain\\Domain.csproj",
+        "projectPath": "C:\\Projetos\\ToDoList\\Domain\\Domain.csproj",
         "packagesPath": "C:\\Users\\Ronaldo\\.nuget\\packages\\",
-        "outputPath": "c:\\Projetos\\ToDoList\\Domain\\obj\\",
+        "outputPath": "C:\\Projetos\\ToDoList\\Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -240,14 +240,14 @@
         }
       }
     },
-    "c:\\Projetos\\ToDoList\\Service\\Service.csproj": {
+    "C:\\Projetos\\ToDoList\\Service\\Service.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Projetos\\ToDoList\\Service\\Service.csproj",
+        "projectUniqueName": "C:\\Projetos\\ToDoList\\Service\\Service.csproj",
         "projectName": "Service",
-        "projectPath": "c:\\Projetos\\ToDoList\\Service\\Service.csproj",
+        "projectPath": "C:\\Projetos\\ToDoList\\Service\\Service.csproj",
         "packagesPath": "C:\\Users\\Ronaldo\\.nuget\\packages\\",
-        "outputPath": "c:\\Projetos\\ToDoList\\Service\\obj\\",
+        "outputPath": "C:\\Projetos\\ToDoList\\Service\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -270,11 +270,11 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "c:\\Projetos\\ToDoList\\Data\\Data.csproj": {
-                "projectPath": "c:\\Projetos\\ToDoList\\Data\\Data.csproj"
+              "C:\\Projetos\\ToDoList\\Data\\Data.csproj": {
+                "projectPath": "C:\\Projetos\\ToDoList\\Data\\Data.csproj"
               },
-              "c:\\Projetos\\ToDoList\\Domain\\Domain.csproj": {
-                "projectPath": "c:\\Projetos\\ToDoList\\Domain\\Domain.csproj"
+              "C:\\Projetos\\ToDoList\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Projetos\\ToDoList\\Domain\\Domain.csproj"
               }
             }
           }

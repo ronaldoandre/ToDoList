@@ -10,6 +10,5 @@ namespace TODOLIST.Domain.ViewModels{
         public string Password { get; set; }
         public string FullName { get; set; }
         public RolePerfilEnum Role { get; set; }
-        public IEnumerable<ToDoViewModel> ToDos { get; set; }
     }
 }

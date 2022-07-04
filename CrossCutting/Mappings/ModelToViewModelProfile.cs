@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using Domain.Dtos.ToDo;
 using Domain.Dtos.Users;
 using Domain.ViewModels;
 using TODOLIST.Domain.Models;
@@ -19,6 +20,8 @@ namespace CrossCutting.Mappings
             CreateMap<UserViewModel, UserRegisterDto>()
                 .ReverseMap();
             CreateMap<ToDo, ToDoViewModel>()
+                .ReverseMap();
+             CreateMap<ToDo, ToDoCreateDto>()
                 .ReverseMap();
         }
     }
